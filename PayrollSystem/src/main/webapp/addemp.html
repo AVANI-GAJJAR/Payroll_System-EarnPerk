@@ -1,0 +1,74 @@
+<!-- use payroll;
+create table employee(srno int,title varchar(30),  jid varchar(4) ,ename varchar(30),
+dob date,phone int(12),mail varchar(20) , gender varchar(10), panno varchar(13) ,  
+doj date ,state varchar(20), city varchar(20),addr varchar(50) ,pin int);
+
+insert into employee() values(1,"Manager","J01","Mihir Devghare","2002-11-27",
+2143657098,"mihir123@gmail.com","Male","AQDPP8277H","2020-02-03","Gujarat",
+"Ahmedabad","B-112 RajHans Flats,nikol",382474);
+-->
+<html>
+	<head>
+		<title>Registration Page</title>
+	</head>
+	<body>
+		<form action="register" method="post">
+		<table border=1>
+			<tr>
+			<td colspan=2><center>Add New Employee</center></td>
+			</tr>
+			<tr>
+				<td>Employee Title:</td><td><input type="text"name="title"></td>
+			</tr>
+			<tr>
+				<td>Employee Id:</td><td><input type="text"name="empid"></td>
+			</tr>
+			<tr>
+				<td>Date of Birth:</td><td><input type="date" name="dob"></td>
+			</tr>
+			<tr>
+				<td>Address :</td><td><input type="text" name="addr"></td>
+			</tr>
+			<tr>
+				<td>State :</td><td><input type="text" name="state"></td>
+			</tr>
+			<tr>
+				<td>Mobile Number :</td><td><input type="tel" name="phone"></td>
+			</tr>
+			<tr>
+				<td>PAN Number :</td><td><input type="text" name="panno"></td>
+			</tr>
+			<tr>
+				<td>Job ID :</td><td><input type="text" name="jid"></td>
+			</tr>
+			<tr>
+				<td>Employee Name :</td><td><input type="text" name="ename"></td>
+			</tr>
+			<tr>
+				<td>Date of Joining :</td><td><input type="date" name="doj"></td>
+			</tr>
+			<tr>
+				<td>City :</td><td><input type="text" name="city"></td>
+			</tr>
+			<tr>
+				<td>Pincode :</td><td><input type="text" name="pin"></td>
+			</tr>
+			<tr>
+				<td>Email ID :</td><td><input type="email" name="mail"></td>
+			</tr>
+				<tr>
+				<td>Gender:</td>
+				<td><input type="radio"  name="gender" value="Female">
+				<label for="Female">Female</label>
+				<input type="radio" name="gender" value="Male">
+				<label for="Male">Male</label>
+				<input type="radio"  name="gender" value="Other">
+				<label for="Other">Other</label> </td>
+  			</tr>
+			<tr>
+				<td colspan=2><center><input type="submit"><input type="reset"></center></td>
+			</tr>
+			</table>
+		</form>
+	</body>
+</html>
